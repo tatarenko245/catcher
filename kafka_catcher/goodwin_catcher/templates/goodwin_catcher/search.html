@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Додаток, який ловить повідомлення з топіку кафки. </title>
+    <meta name="author" content="Tatarenko">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img">
+                <title>Bootstrap</title>
+            </svg>
+            <span class="fs-4">Доступні повідомлення</span>
+        </a>
+
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Головна</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Доступні повідомлення</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Документація</a>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6 offset-1">
+                <h1>Шукати повідомлення по: </h1>
+                <form action="">
+                    <label for="operation_id">operation_id</label>
+                    <input type="text" id="operation_id" class="form-control" name="operation_id"
+                           placeholder="Вкажіть operation_id:">
+
+                    <label for="cpid">cpid</label>
+                    <input type="text" id="cpid" class="form-control" name="cpid"
+                           placeholder="Вкажіть cpid:">
+                </form>
+
+            </div>
+
+            <div class="col-3 offset-1">
+                <h1>Повідомлення:</h1>
+                <div class="alert alert-light">
+                    Питома інформація
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<footer>
+</footer>
+</body>
+</html>

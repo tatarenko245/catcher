@@ -1,0 +1,33 @@
+{% extends 'goodwin_catcher/base.html' %}
+
+{% block content %}
+
+<div class="container">
+        <div class="row">
+
+            <div class="col-6 offset-1">
+                <h1>Шукати повідомлення по: </h1>
+                <form action="">
+                    <label for="operation_id">operation_id</label>
+                    <input type="text" id="operation_id" class="form-control" name="operation_id"
+                           placeholder="Вкажіть operation_id:">
+
+                    <label for="cpid">cpid</label>
+                    <input type="text" id="cpid" class="form-control" name="cpid"
+                           placeholder="Вкажіть cpid:">
+                </form>
+
+            </div>
+
+            <div class="col-3 offset-1">
+                <h1>Повідомлення:</h1>
+                <div class="alert alert-light">
+                    тут будуть повідомлення
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
