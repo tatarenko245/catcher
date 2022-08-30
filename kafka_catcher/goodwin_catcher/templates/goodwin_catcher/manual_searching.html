@@ -1,33 +1,42 @@
 {% extends 'goodwin_catcher/base.html' %}
-
+<script src="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+<link rel="stylesheet" href="style.css">
 {% block content %}
 
 <div class="container">
-        <div class="row">
+    <div class="row">
+        <div class="col-6 offset-1">
+            <h1>Шукати повідомлення по: </h1>
+            <form action="">
+                <label for="operation_id">operation_id</label>
+                <input type="text" id="operation_id" class="form-control" name="operation_id"
+                       placeholder="Вкажіть operation_id:">
+                <br>
+                <p align="center">Або</p>
+                <label for="ocid">ocid</label>
+                <input type="text" id="ocid" class="form-control" name="ocid"
+                       placeholder="Вкажіть ocid:">
 
-            <div class="col-6 offset-1">
-                <h1>Шукати повідомлення по: </h1>
-                <form action="">
-                    <label for="operation_id">operation_id</label>
-                    <input type="text" id="operation_id" class="form-control" name="operation_id"
-                           placeholder="Вкажіть operation_id:">
+                <br>
+                <br>
 
-                    <label for="cpid">cpid</label>
-                    <input type="text" id="cpid" class="form-control" name="cpid"
-                           placeholder="Вкажіть cpid:">
-                </form>
-
-            </div>
-
-            <div class="col-3 offset-1">
-                <h1>Повідомлення:</h1>
-                <div class="alert alert-light">
-                    тут будуть повідомлення
+                <div class="col-3 offset-10">
+                    <button type="submit" class="btn btn-outline-success">Шукати</button>
                 </div>
+            </form>
+        </div>
 
 
+        <div class="col-3 offset-1">
+            <h1>Повідомлення:</h1>
+            <div class="alert alert-light">
+                {{ messages }}
             </div>
+
+
         </div>
     </div>
+</div>
+
 
 {% endblock %}
